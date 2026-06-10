@@ -4,29 +4,29 @@
 class Hover < Formula
   desc "Drone relay CLI for Hover"
   homepage "https://hoverfeed.com"
-  version "0.1.101"
+  version "0.1.115"
 
   on_macos do
     on_arm do
       url "https://github.com/hoverhq/releases/releases/download/v#{version}/hover-darwin-arm64.tar.gz"
-      sha256 "cd241c51a46dd8300a6350ffdf0694845847b8d63dfdd8b8ed1949c10988983e"
+      sha256 "a329a99e2135e08d3526954fab8274587c53c84a1a4115555d284404a9eae6d7"
     end
 
     on_intel do
       url "https://github.com/hoverhq/releases/releases/download/v#{version}/hover-darwin-amd64.tar.gz"
-      sha256 "555488c801eaf552bcaf3b536039c2c74e42fd4c4af0abd2b483f77802a98750"
+      sha256 "79fc119e53fb325df828530a81e4402919f05a01dd0ba4231b6f4fef56f25ad4"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/hoverhq/releases/releases/download/v#{version}/hover-linux-amd64.tar.gz"
-      sha256 "3735fd64e15af88f133b6b8fb2cfe99fb0f2aa09971c0fe6ebae0539c4cca255"
+      sha256 "43c964dce5a5234e4866f63ca38615d32c26c17874b035a57727fbd511f873dd"
     end
 
     on_arm do
       url "https://github.com/hoverhq/releases/releases/download/v#{version}/hover-linux-arm64.tar.gz"
-      sha256 "e795457e4078b1b729bec3d0c31083c70a5f440656ffd51403057d4b24e67e54"
+      sha256 "9fa7f874b56ed86197597043e73337efaadae840b688bf6b03cf84cea4d5bb9b"
     end
   end
 
