@@ -8,29 +8,29 @@
 class Hover < Formula
   desc "Drone relay CLI for Hover"
   homepage "https://hoverfeed.com"
-  version "0.1.142"
+  version "0.1.143"
 
   on_macos do
     on_arm do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-darwin-arm64.tar.gz"
-      sha256 "93ed430a573d51d2446be01f27d6ef9670182ef1fcca99b78f60d0232c6844b9"
+      sha256 "9813643f18a69142d17589f28a7c4f9f1d296fe5aa1138a9304f4c1f5fb9b118"
     end
 
     on_intel do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-darwin-amd64.tar.gz"
-      sha256 "7a4075b97a6e65a44a34635c239a3b12f8756fca4dc45052f616c780da5decc9"
+      sha256 "995de1051e1972b2862421c53ea1d03e0ad077974d327f756625d138bc450349"
     end
   end
 
   on_linux do
     on_intel do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-linux-amd64.tar.gz"
-      sha256 "d80948492fe2fe38ed35555498dd27439ac657f58aa1466f213df308777e3a2f"
+      sha256 "3ca793aee21efb06f5277c15d5e01ec5943e2f83abc55a1018b9f7b49fe640ba"
     end
 
     on_arm do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-linux-arm64.tar.gz"
-      sha256 "5a0cfa36106f0c1b111b812dbeaa11c0589c0eadd43502d09f1b9e321f0f5892"
+      sha256 "279e7535acf7388da00cffaee1a3cac94d948b1b6f1cc665dc275576cca18525"
     end
   end
 
