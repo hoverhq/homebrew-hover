@@ -13,24 +13,24 @@ class Hover < Formula
   on_macos do
     on_arm do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-darwin-arm64.tar.gz"
-      sha256 "74b3d0ca9a241caf8ce70919268f5485ca4e2c30d7dd9f53f3478ab060694a0c"
+      sha256 "68df2298eea5d1f084cc72b014254b8195cadf9349b56574270fd48ca1389023"
     end
 
     on_intel do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-darwin-amd64.tar.gz"
-      sha256 "1bbe2b8260130052641b4367cf2f102c61f89b05aba25a4a7dab65bf5420cb7d"
+      sha256 "2f3d190b3d33d663af97c6b71b0693858da1daabf6e4e9790c6d147baeeb5985"
     end
   end
 
   on_linux do
     on_intel do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-linux-amd64.tar.gz"
-      sha256 "36a6e7a08cbcec150f177a4c37c4e799b6b85713e963e97b79262403a68a7ef6"
+      sha256 "3da3dcff84c8790112325ba8804c0c3b60c343786cca55cc3b9b7e992464982b"
     end
 
     on_arm do
       url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-linux-arm64.tar.gz"
-      sha256 "9e9cf6f5f25c1b3ac9d898869af18eda560eb2d50dbbb8914b591e9e8854e63c"
+      sha256 "83d3d19737aaa6a545ef7c58d124af7f493b481cdb55b12dd22769f010829c1f"
     end
   end
 
