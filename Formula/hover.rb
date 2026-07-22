@@ -3,34 +3,34 @@
 # .github/workflows/cicd.yml on each prod-v* tag push. The tap repo is named
 # `homebrew-hover` so `brew tap hoverhq/hover` resolves it with no explicit URL.
 #
-# Binaries are served from S3/CloudFront (downloads.nebli.ai/cli/...),
+# Binaries are served from S3/CloudFront (downloads.hoverfeed.com/cli/...),
 # NOT GitHub releases — the tap repo holds ONLY this formula now.
 class Hover < Formula
   desc "Drone relay CLI for Hover"
   homepage "https://nebli.ai"
-  version "0.1.256"
+  version "0.1.257"
 
   on_macos do
     on_arm do
-      url "https://downloads.nebli.ai/cli/versions/v#{version}/hover-darwin-arm64.tar.gz"
-      sha256 "ded72730c2407a6bc9a11b51843e3e93fe6985ebdf0e9818a5a0a939a812df9a"
+      url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-darwin-arm64.tar.gz"
+      sha256 "ef00965843e373edccb29962511010190e2cad199257e10c8fdbf93c9e2c3b19"
     end
 
     on_intel do
-      url "https://downloads.nebli.ai/cli/versions/v#{version}/hover-darwin-amd64.tar.gz"
-      sha256 "305979768c98b3e515191887715a9c6a7061fd4b96388338727123e4896ac4cf"
+      url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-darwin-amd64.tar.gz"
+      sha256 "596fd84973ef6a92629f427c76b0ee2d375070524bb565c8f4ffa0ff8d26ede7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://downloads.nebli.ai/cli/versions/v#{version}/hover-linux-amd64.tar.gz"
-      sha256 "0bb8b9bdcc115020310c467708cf795aab7807e039ce8e2de89a9eb091e92f23"
+      url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-linux-amd64.tar.gz"
+      sha256 "002e151e5b71c2b07f53b7b6a30f98aa5aabb4d6046519f0b1b74456e2040805"
     end
 
     on_arm do
-      url "https://downloads.nebli.ai/cli/versions/v#{version}/hover-linux-arm64.tar.gz"
-      sha256 "0704ec27c1573ecddbee2ddeda55abf61bb9281931f21e7e443ce7638b5a2eb9"
+      url "https://downloads.hoverfeed.com/cli/versions/v#{version}/hover-linux-arm64.tar.gz"
+      sha256 "957ea49f502987a39f82b6fc2d9e3b40dcbfcc9de011145a1e13656368a582a5"
     end
   end
 
